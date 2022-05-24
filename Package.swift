@@ -16,15 +16,15 @@ let package = Package(
             targets: ["FakeGTMSessionFetcherCore", "FakeGTMSessionFetcherFull"]
         ),
         .library(
-            name: "FakeGTMSessionFetcherCore",
+            name: "CasperCore",
             targets: ["FakeGTMSessionFetcherCore"]
         ),
         .library(
-            name: "FakeGTMSessionFetcherFull",
+            name: "CasperFull",
             targets: ["FakeGTMSessionFetcherFull"]
         ),
         .library(
-            name: "FakeGTMSessionFetcherLogView",
+            name: "CasperLogView",
             targets: ["FakeGTMSessionFetcherLogView"]
         )
     ],
