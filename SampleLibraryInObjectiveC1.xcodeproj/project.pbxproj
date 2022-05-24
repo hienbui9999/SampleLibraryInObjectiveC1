@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		908F6F2F283CD2680050531B /* SampleLibraryInObjectiveC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 908F6F2E283CD2680050531B /* SampleLibraryInObjectiveC1.m */; };
-		908F6F30283CD2680050531B /* SampleLibraryInObjectiveC1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 908F6F2D283CD2680050531B /* SampleLibraryInObjectiveC1.h */; };
+		908F6F2F283CD2680050531B /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 908F6F2E283CD2680050531B /* GTMSessionFetcher.m */; };
+		908F6F30283CD2680050531B /* GTMSessionFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 908F6F2D283CD2680050531B /* GTMSessionFetcher.h */; };
+		908F6F40283CD5380050531B /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908F6F3F283CD5380050531B /* Package.swift */; };
+		908F6F91283CF75F0050531B /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 908F6F90283CF75F0050531B /* GTMGatherInputStream.m */; };
+		908F6F94283CF7D40050531B /* GTMSessionFetcherLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908F6F93283CF7D40050531B /* GTMSessionFetcherLogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +21,22 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				908F6F30283CD2680050531B /* SampleLibraryInObjectiveC1.h in CopyFiles */,
+				908F6F30283CD2680050531B /* GTMSessionFetcher.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		908F6F2A283CD2680050531B /* libSampleLibraryInObjectiveC1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSampleLibraryInObjectiveC1.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		908F6F2D283CD2680050531B /* SampleLibraryInObjectiveC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleLibraryInObjectiveC1.h; sourceTree = "<group>"; };
-		908F6F2E283CD2680050531B /* SampleLibraryInObjectiveC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleLibraryInObjectiveC1.m; sourceTree = "<group>"; };
+		908F6F2A283CD2680050531B /* libSampleLibraryInObjectiveC1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSampleLibraryInObjectiveC1.a; path = "/Users/hien/ObjCLibrary/SampleLibraryInObjectiveC1/build/Debug-iphoneos/libSampleLibraryInObjectiveC1.a"; sourceTree = "<absolute>"; };
+		908F6F2D283CD2680050531B /* GTMSessionFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcher.h; sourceTree = "<group>"; };
+		908F6F2E283CD2680050531B /* GTMSessionFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMSessionFetcher.m; sourceTree = "<group>"; };
+		908F6F3F283CD5380050531B /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		908F6F8F283CF7240050531B /* GTMGatherInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMGatherInputStream.h; sourceTree = "<group>"; };
+		908F6F90283CF75F0050531B /* GTMGatherInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMGatherInputStream.m; sourceTree = "<group>"; };
+		908F6F92283CF7B90050531B /* GTMSessionFetcherLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMSessionFetcherLogViewController.h; sourceTree = "<group>"; };
+		908F6F93283CF7D40050531B /* GTMSessionFetcherLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMSessionFetcherLogViewController.m; sourceTree = "<group>"; };
+		908F6F95283CF9390050531B /* FakeGTMSessionFetcher.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FakeGTMSessionFetcher.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,26 +53,95 @@
 		908F6F21283CD2680050531B = {
 			isa = PBXGroup;
 			children = (
-				908F6F2C283CD2680050531B /* SampleLibraryInObjectiveC1 */,
-				908F6F2B283CD2680050531B /* Products */,
+				908F6F95283CF9390050531B /* FakeGTMSessionFetcher.podspec */,
+				908F6F3F283CD5380050531B /* Package.swift */,
+				908F6F2C283CD2680050531B /* Sources */,
 			);
 			sourceTree = "<group>";
 		};
-		908F6F2B283CD2680050531B /* Products */ = {
+		908F6F2C283CD2680050531B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				908F6F2A283CD2680050531B /* libSampleLibraryInObjectiveC1.a */,
+				908F6F8B283CF6BE0050531B /* LogView */,
+				908F6F89283CF6A80050531B /* Full */,
+				908F6F36283CD3630050531B /* Core */,
 			);
-			name = Products;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		908F6F2C283CD2680050531B /* SampleLibraryInObjectiveC1 */ = {
+		908F6F36283CD3630050531B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				908F6F2D283CD2680050531B /* SampleLibraryInObjectiveC1.h */,
-				908F6F2E283CD2680050531B /* SampleLibraryInObjectiveC1.m */,
+				908F6F37283CD3710050531B /* Public */,
+				908F6F2E283CD2680050531B /* GTMSessionFetcher.m */,
 			);
-			path = SampleLibraryInObjectiveC1;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		908F6F37283CD3710050531B /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F38283CD3790050531B /* FakeGTMSessionFetcher */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		908F6F38283CD3790050531B /* FakeGTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F2D283CD2680050531B /* GTMSessionFetcher.h */,
+			);
+			path = FakeGTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		908F6F89283CF6A80050531B /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F8A283CF6B70050531B /* Public */,
+				908F6F90283CF75F0050531B /* GTMGatherInputStream.m */,
+			);
+			path = Full;
+			sourceTree = "<group>";
+		};
+		908F6F8A283CF6B70050531B /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F8D283CF6FA0050531B /* FakeGTMSessionFetcher */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		908F6F8B283CF6BE0050531B /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F8C283CF6C50050531B /* Public */,
+				908F6F93283CF7D40050531B /* GTMSessionFetcherLogViewController.m */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
+		908F6F8C283CF6C50050531B /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F8E283CF7010050531B /* FakeGTMSessionFetcher */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		908F6F8D283CF6FA0050531B /* FakeGTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F8F283CF7240050531B /* GTMGatherInputStream.h */,
+			);
+			path = FakeGTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		908F6F8E283CF7010050531B /* FakeGTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				908F6F92283CF7B90050531B /* GTMSessionFetcherLogViewController.h */,
+			);
+			path = FakeGTMSessionFetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +175,7 @@
 				TargetAttributes = {
 					908F6F29283CD2680050531B = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -109,7 +188,7 @@
 				Base,
 			);
 			mainGroup = 908F6F21283CD2680050531B;
-			productRefGroup = 908F6F2B283CD2680050531B /* Products */;
+			productRefGroup = 908F6F21283CD2680050531B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -123,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				908F6F2F283CD2680050531B /* SampleLibraryInObjectiveC1.m in Sources */,
+				908F6F40283CD5380050531B /* Package.swift in Sources */,
+				908F6F94283CF7D40050531B /* GTMSessionFetcherLogViewController.m in Sources */,
+				908F6F2F283CD2680050531B /* GTMSessionFetcher.m in Sources */,
+				908F6F91283CF75F0050531B /* GTMGatherInputStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +216,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -181,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -193,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -223,7 +307,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -234,9 +318,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -245,11 +330,20 @@
 		908F6F34283CD2680050531B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T97Q4ATZ2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleLibraryInObjectiveC1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -257,11 +351,19 @@
 		908F6F35283CD2680050531B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T97Q4ATZ2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleLibraryInObjectiveC1-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
