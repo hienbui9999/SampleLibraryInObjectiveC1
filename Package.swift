@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FakeGTMSessionFetcher",
+    name: "CasperObjectiveCSDKFake",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_12),
