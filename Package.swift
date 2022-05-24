@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "CasperObjectiveCSDKFake",
+    name: "FakeGTMSessionFetcher",
     platforms: [
         .iOS(.v9),
         .macOS(.v10_12),
@@ -16,15 +16,15 @@ let package = Package(
             targets: ["FakeGTMSessionFetcherCore", "FakeGTMSessionFetcherFull"]
         ),
         .library(
-            name: "CasperCore",
+            name: "FakeGTMSessionFetcherCore",
             targets: ["FakeGTMSessionFetcherCore"]
         ),
         .library(
-            name: "CasperFull",
+            name: "FakeGTMSessionFetcherFull",
             targets: ["FakeGTMSessionFetcherFull"]
         ),
         .library(
-            name: "CasperLogView",
+            name: "FakeGTMSessionFetcherLogView",
             targets: ["FakeGTMSessionFetcherLogView"]
         )
     ],
